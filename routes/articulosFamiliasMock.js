@@ -1,5 +1,5 @@
 import express from 'express'
-import { addArticuloFamilia, deleteArticuloFamilia, getArticuloFamiliaById, getArticuloFamiliaByName, getArticulosFamilias, updateArticuloFamilia } from '../controllers/articulosFamilias.controllers.js'
+import { addArticuloFamilia, deleteArticuloFamilia, getArticuloFamiliaById, getArticuloFamiliaByName, getArticulosFamilias, updateArticuloFamilia } from '../controllers/articulosFamiliasMock.controllers.js'
 const router = express.Router()
 
 // Obtener todos los productos
