@@ -6,8 +6,7 @@
     },
     "extends": [
         "eslint:recommended",
-        "standard",
-        "eslint-config-prettier"
+        "standard"
     ],
     "overrides": [
     ],

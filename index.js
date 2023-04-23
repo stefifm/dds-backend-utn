@@ -1,5 +1,8 @@
 import express from 'express'
 import articulosFamiliasMockRouter from './routes/articulosFamiliasMock.js'
+import articulosFamiliasRouter from './routes/articulosfamilias.js'
+// Importar el servidor
+import './base-orm/sqlite-init.js'
 
 // Crear el servidor
 const app = express()
@@ -15,6 +18,9 @@ app.get('/', (req, res) => {
 // Acceso a la ruta de articulos familia mock
 
 app.use(articulosFamiliasMockRouter)
+
+// Acceso a la ruta de articulos familia
+app.use(articulosFamiliasRouter)
 
 // Levatar el servidor
 
