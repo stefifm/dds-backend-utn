@@ -12,7 +12,7 @@ const getAllArticulos = async (req, res, next) => {
     }
 
     if (req.query.Activo !== undefined && req.query.Activo !== '') {
-      where.Activo = req.query.Activo
+      where.Activo = (req.query.Activo === 'true')
     }
 
     const Pagina = req.query.Pagina ?? 1
