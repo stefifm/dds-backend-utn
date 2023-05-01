@@ -104,6 +104,16 @@ const articulos = sequelize.define(
         }
       }
     },
+    FechaAlta: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: 'Fecha de alta requerida'
+        }
+      }
+    },
     Activo: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
